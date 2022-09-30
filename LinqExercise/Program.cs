@@ -97,9 +97,9 @@ namespace LinqExercise
             //TODO: Print the Sum and then the Average of the employees' YearsOfExperience if their YOE is less than or equal to 10 AND Age is greater than 35
 
             Console.WriteLine("----------People with age > 35 and yrs of xp <= 10----------");
-            var yrsOfEXP = employees.Where(person => person.Age > 35 && person.YearsOfExperience <= 10);
-            var averagee = employees.Average(person => person.YearsOfExperience);
-            var summ = employees.Sum(person => person.YearsOfExperience);
+            var averagee = employees.Where(person => person.Age > 35 && person.YearsOfExperience <= 10).Average(person => person.YearsOfExperience);
+            var summ = employees.Where(person => person.Age > 35 && person.YearsOfExperience <= 10).Sum(person => person.YearsOfExperience);
+            
             Console.WriteLine("Sum: " +  summ);
             Console.WriteLine("Average: " + averagee);
 

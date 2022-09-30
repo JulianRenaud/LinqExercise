@@ -25,13 +25,11 @@ namespace LinqExercise
 
             //TODO: Print the Sum of numbers
             Console.WriteLine("----------Sum of numbers----------");
-            int sum = numbers.Sum();
-            Console.WriteLine(sum);
+            Console.WriteLine(numbers.Sum());
 
             //TODO: Print the Average of numbers
             Console.WriteLine("----------Average of numbers----------");
-            var average = sum / numbers.Length;
-            Console.WriteLine(average);
+            Console.WriteLine(numbers.Average());
 
             //TODO: Order numbers in ascending order and print to the console
             Console.WriteLine("----------List lowest to highest----------");
